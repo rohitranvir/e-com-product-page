@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(90deg, #007BFF, #0056b3);
+            color: white;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1.2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            max-width: 200px;
+            margin: 0 auto 10px;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: #007BFF;
+        }
+
+        .product-card p {
+            margin: 5px 0;
+            color: #555;
+        }
+
+        .product-card .price {
+            font-size: 1.2rem;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .product-card button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .product-card button:hover {
+            background: #0056b3;
+        }
+
+        .featured {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .featured h2 {
+            font-size: 2rem;
+            color: #007BFF;
+        }
+
+        .featured p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to E-Shop</h1>
+        <p>Your one-stop shop for the best deals!</p>
+    </header>
+
+    <nav>
+        <a href="#products">Products</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="featured">
+            <h2>Featured Products</h2>
+            <p>Check out our latest arrivals and top picks for you.</p>
+        </div>
+
+        <div class="products">
+            <div class="product-card">
+                <img src="product1.jpg" alt="Product 1">
+                <h3>Wireless Headphones</h3>
+                <p>High-quality sound with noise cancellation.</p>
+                <p class="price">$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="product2.jpg" alt="Product 2">
+                <h3>Smartphone</h3>
+                <p>Latest model with cutting-edge features.</p>
+                <p class="price">$699.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="product3.jpg" alt="Product 3">
+                <h3>Smartwatch</h3>
+                <p>Track your fitness and stay connected.</p>
+                <p class="price">$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="product4.jpg" alt="Product 4">
+                <h3>Laptop</h3>
+                <p>Powerful performance for work and play.</p>
+                <p class="price">$1199.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="product5.jpg" alt="Product 5">
+                <h3>Bluetooth Speaker</h3>
+                <p>Portable with excellent sound quality.</p>
+                <p class="price">$49.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="product6.jpg" alt="Product 6">
+                <h3>Gaming Console</h3>
+                <p>Experience next-gen gaming with immersive graphics.</p>
+                <p class="price">$399.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="product7.jpg" alt="Product 7">
+                <h3>4K TV</h3>
+                <p>Stunning visuals with ultra-high definition.</p>
+                <p class="price">$999.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="product8.jpg" alt="Product 8">
+                <h3>Camera</h3>
+                <p>Capture memories with high-resolution images.</p>
+                <p class="price">$799.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 E-Shop. All rights reserved. | <a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
